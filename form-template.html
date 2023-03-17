@@ -1,0 +1,41 @@
+{!! Form::open() !!}
+
+            <div class="form-group">
+                {!! Form::label("Job-Title", "Title") !!}
+                {!! Form::text("job-title", "", ['class' => 'form-control']) !!}
+            </div>
+            <div class="form-group">
+                {!! Form::label("Job-Salary", "Salary") !!}
+                {!! Form::number("salary", "", ['class' => 'form-control']) !!}
+            </div>
+            <div class="form-group">
+                {!! Form::label("", "Email") !!}
+                {!! Form::email($name, $value, [$options]) !!}
+            </div>
+            <div class="form-group">
+                {!! Form::label("", "") !!}
+                {!! Form::date($name, $value, [$options]) !!}
+            </div>
+            <div class="form-group">
+                {!! Form::label("", "") !!}
+                {!! Form::select($name, $list, $selected, [$options]) !!}
+            </div>
+            <div class="form-group">
+                {!! Form::label("", "") !!}
+                {!! Form::radio($name, $value, $checked, [$options]) !!}
+            </div>
+            <div class="form-group">
+                {!! Form::label("", "") !!}
+                {!! Form::password($name, [$options]) !!}
+            </div>
+            <div class="form-group">
+                {!! Form::label("", "") !!}
+                {!! Form::checkbox($name, $value, $checked, [$options]) !!}
+            </div>
+            <div class="form-group">
+                {!! Form::label("", "") !!}
+                {!! Form::file($name, [$options]) !!}
+            </div>
+            {!! Form::submit("Submit", ['class' => 'form-control']) !!}
+
+            {!! Form::close() !!}
